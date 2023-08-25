@@ -6,7 +6,7 @@ The projects published in Github based on `VOTING Stimmunterlagen Offline` are m
 
 This project uses the [Code of Conduct](./CODE_OF_CONDUCT.md) to define expected conduct in our community.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting a project maintainer at psirt-stimmunterlagen@abraxas.ch
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting a project maintainer at psirt-voting@abraxas.ch
 
 ## Bug Bounty and Code Disclosure Policy
 
@@ -26,6 +26,15 @@ We will from time to time as considered necessary issue an updated version of th
 
 The rules and regulations established in the [Code of Conduct](./CODE_OF_CONDUCT.md) and this Bug Bounty and Code Disclosure Policy are binding for this Program.
 
+### Legal Safe Harbor
+
+Abraxas values a constructive and fair collaboration with the participants of the Program. Abraxas will not take legal actions against participants in this Bug Bounty Program, as long as participants act in good faith and in accordance with the licence agreement, this Bug Bounty Policy, the provisions of the [Code of Conduct](./CODE_OF_CONDUCT.md) and the applicable laws. Under these conditions:
+
+We interpret activities by participants within this Program as authorized access under the Swiss Penal Code. This includes Swiss Penal Code paragraphs 143, 143bis and 144bis.
+We will not file a complaint against participants within this Program for trying to circumvent the security measures deployed in order to protect the services in-scope for this Program.
+If legal action is initiated by a third party against a participant within this Program, we will take reasonable measures supporting the participant to defend the claim of the third party.
+Any non-compliance with the licence agreement, [Code of Conduct](./CODE_OF_CONDUCT.md), this Bug Bounty Policy, and the applicable laws may result in exclusion from the Program and legal prosecution. For minor breaches, a warning may be issued. For severe breaches, Abraxas reserves all rights provided by applicable laws.
+
 #### Basic Principles
 
 All activities leading to the discovery of an improvement:
@@ -43,7 +52,7 @@ All activities leading to the discovery of an improvement:
 
 #### Responsible Vulnerability Disclosure
 
-Vulnerability disclosure is possible since the start of the public phase of the Program, respecting the “Responsible Vulnerability Disclosure” section in the [Code of Conduct](./CODE_OF_CONDUCT.md) and after obtaining written permission issued by Abraxas. Abraxas will communicate transparently about results and will credit researchers publicly, if agreed.
+Vulnerability disclosure is possible since the start of the public phase of the Program, respecting the “Responsible Vulnerability Disclosure” section in the [Code of Conduct](./CODE_OF_CONDUCT.md). Abraxas will also communicate transparently about results and will credit researchers publicly, if agreed.
 
 #### Reporting Requirements
 
@@ -72,13 +81,13 @@ Should you identify an interesting but out-of-scope target you can attribute to 
 
 The application is used on a terminal device without access to any network systems and without admin rights. The application is used in a 4-eyes principle. The input data is delivered via an external and encrypted physical medium. The output of the system is signed and also encrypted on a physical medium.
 
-Any attacks that are theoretical or require access to a remote application on the network are generally out of scope, also attacks that target the integrity of end users and other Social Engineering methods.
+Any attacks that are theoretical or require access to a remote application on the network are generally out of scope, also attacks that target the integrity of end users.
 
 ### Qualifying Findings
 
 Everything with a real impact on security of `VOTING Stimmunterlagen Offline` – e.g.:
 
-- Remote code execution (RCE) based on content that is imported into the application via an input medium
+- Remote code execution (RCE) or other attack types based on content that is imported into the application via an input medium
 - Source code findings with a measurable and provable impact on the system or the generated output
 
 ### Reward Grid
@@ -92,6 +101,16 @@ Reports without direct impact according to [Qualifying Vulnerabilities](./#quali
 |Scope|Low|Medium|High|Critical|
 |---|---|---|---|---|
 |VOTING Stimmunterlagen Offline|CHF 300|CHF 750|CHF 1'500|CHF 5'000|
+
+#### Scenarios
+
+Additionally, there are specific scenarios for which Abraxas is prepared to offer special bounties. These bounties apply to all scopes and will be paid instead of the above CVSS based bounties (and not additional to them), if applicable.
+
+|No.|Scenario|Examples|Bounty Range|
+|---|---|---|---|
+|1|Manipulated voting cards can be generated which make it impossible to submit a vote or permit to falsify the vote.<br /><br />Note: Manipulation of data within the source systems is excluded and cannot be claimed here. The manipulations must happen after exportation and verification from the source systems.| - Voting cards will be declared "invalid" during the electronic vote due to incorrect codes.<br />- Votes will be declared "invalid" during the vote, despite they are valid.<br />- E-voting codes (e.g. Initialisation Code) are invalid and cannot be used in the e-voting system.<br />- Individual voting cards are removed from the total set.<br />- Drop of codes for voting options.<br />- Drop of question text.<br />- Swapping the names of candidates.<br />| CHF 5'000 - CHF 15'000|
+
+Rewards are distributed at the discretion of Abraxas.
 
 #### Eligibility Bounties
 

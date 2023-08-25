@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  library-deployment:
+    image: $LIBRARY_BASE_IMAGE
+    container_name: library-deployment
+    hostname: library-deployment
+    environment:
+      GIT_REPOSITORY_URL: $GIT_REPOSITORY_URL
+      GIT_REPOSITORY_DIRECTORY: $GIT_REPOSITORY_DIRECTORY
+      GIT_TAG: $GIT_TAG
+      CI_BUILD_VERSION: $CI_BUILD_VERSION
+      CI_BUILD_CONFIGURATION: $CI_BUILD_CONFIGURATION
+      CI_PROJECT_DIR: '$CI_PROJECT_DIR'
+      CI_PACKAGE_OUT_DIR: '$CI_PACKAGE_OUT_DIR'
+      CI_NUGET_SOURCE_PUBLIC: '$CI_NUGET_SOURCE_PUBLIC'
+      CI_NUGET_SOURCE_LOCAL: '$CI_NUGET_SOURCE_LOCAL'
+    volumes:
+      - ./deploy-library.sh:/mnt/deploy-library.sh
+      - ./packages:$CI_NUGET_SOURCE_LOCAL
+    command: ["/bin/sh", "/mnt/deploy-library.sh"]
+    

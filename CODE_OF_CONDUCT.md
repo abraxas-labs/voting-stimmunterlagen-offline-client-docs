@@ -55,7 +55,7 @@ The content of the scope is defined in the [Bug Bounty and Code Disclosure Polic
 Findings need to be reported through one of the following channels:
 
 - Bug Bounty Program on the [Bug Bounty Switzerland Plattform](https://app.bugbounty.ch/hacker/engagement/details/f7d48517-4ec6-4d91-bc94-5337c30cf5bc/basic-data)
-- issue / security advisory to the Abraxas Product Security Incident Response Team: psirt-stimmunterlagen@abraxas.ch
+- issue / security advisory to the Abraxas Product Security Incident Response Team: psirt-voting@abraxas.ch
 
     Please ensure to report only findings having an impact on security of the product `VOTING Stimmunterlagen Offline` (see chapter "Scope"). Your report must contain a clear proof of concept that demonstrates the scenario.
 
@@ -104,7 +104,7 @@ Abraxas will communicate transparently about results and findings as soon as the
 
 Everyone who reports a relevant finding will be credited for it in accordance with the terms of the [Bug Bounty and Code Disclosure Policy](./SECURITY.md#Bug-Bounty-and-Code-Disclosure-Policy). If you wish, you may remain anonymous. You may also use an alias.
 
-You are free to publish your findings in coordination with Abraxas and only after allowing Abraxas a maximum of 90 days (starting from the day of your submission) to analyze your submission and the opportunity to fix the vulnerability.
+You are free to publish your findings only after allowing Abraxas a maximum of 90 days (starting from the day of your submission) to analyze your submission and the opportunity to fix the vulnerability. Coordinated disclosure with Abraxas after 90 days would be appreciated, but is not specifically required.
 
 ## License Source Code (Permitted use)
 

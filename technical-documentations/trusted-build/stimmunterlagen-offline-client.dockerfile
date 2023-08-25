@@ -1,4 +1,5 @@
-FROM node:16.13.0-bullseye
+# node:16.13.0-bullseye
+FROM node@sha256:7e133f64f31cc14f6668406ad389653cd43710ebddf2579cf79461895169a0f4
 
 ENV \
     # Enable detection of running in a container
@@ -16,10 +17,11 @@ ARG DOTNET_VERSION=6.0.406
 ARG BIN=/usr/bin
 ARG DOTNET_BIN=/usr/share/dotnet
 ARG WINE_VERSION=8.0.0.0~bullseye-1
+ARG OSSLSIGNCODE_VERSION=2.6
 
 # install utils
 RUN apt-get update && \
-    apt-get install -y git-lfs=2.13.2-1+b5 osslsigncode=2.1-1 && \
+    apt-get install -y git-lfs=2.13.2-1+b5 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install dotnet
@@ -41,6 +43,20 @@ RUN dpkg --add-architecture i386 && \
         wine-stable=${WINE_VERSION} \
         wine-stable-amd64=${WINE_VERSION} \
         wine-stable-i386=${WINE_VERSION} && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# download and build osslsigncode
+RUN apt-get update && \
+    apt-get install -y cmake=3.18.4-2+deb11u1 libssl-dev=1.1.1n-0+deb11u5 libcurl4-openssl-dev=7.74.0-1.3+deb11u7 && \
+    mkdir /osslsigncode-tmp && cd /osslsigncode-tmp && \
+    wget https://github.com/mtrojnar/osslsigncode/releases/download/${OSSLSIGNCODE_VERSION}/osslsigncode-${OSSLSIGNCODE_VERSION}.tar.gz && \
+    tar -xvzf osslsigncode-${OSSLSIGNCODE_VERSION}.tar.gz && \
+    cd osslsigncode-${OSSLSIGNCODE_VERSION} && \
+    mkdir build && cd build && \
+    cmake .. && cmake --build . && \
+    mv osslsigncode /usr/bin && \
+    rm -rf /osslsigncode-tmp && \
+    apt-get remove -y cmake libssl-dev libcurl4-openssl-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install semantic release

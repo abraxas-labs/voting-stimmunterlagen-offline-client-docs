@@ -13,7 +13,7 @@ The quality profiles used for this are stored in the [sonar-quality-profiles](./
 
 ### Version
 
-v1.13.4
+v1.17.2
 
 ### Quality Report
 
@@ -30,7 +30,7 @@ v1.13.4
 
 ### Version
 
-v1.13.4
+v1.17.2
 
 ### Quality Report
 
@@ -45,8 +45,22 @@ v1.13.4
 
 ### Version
 
-v1.3.5
+v1.4.0
 
 ### Quality Report
 
 ![SonarQube Report - VOTING Stimmunterlagen Offline Client Shared](SonarQube%20Report%20-%20VOTING%20Stimmunterlagen%20Offline%20Client%20Shared.png)
+
+## EAI Common eCH (Library)
+
+### Used Quality Profiles
+
+- [C# - Abraxas Way v1.3](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.3.xml)
+
+### Version
+
+v3.0.0
+
+### Quality Report
+
+![SonarQube Report - EAI Common eCH Library](SonarQube%20Report%20-%20EAI%20Common%20eCH%20Library.png)

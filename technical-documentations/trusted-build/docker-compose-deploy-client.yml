@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  client-deployment:
+    image: $BASE_IMAGE
+    container_name: client-deployment
+    hostname: client-deployment
+    environment:
+      GIT_REPOSITORY_URL: $GIT_REPOSITORY_URL
+      GIT_REPOSITORY_DIRECTORY: $GIT_REPOSITORY_DIRECTORY
+      GIT_TAG: $GIT_TAG
+      APP_VERSION: $CI_BUILD_VERSION
+      CI_DEPLOYMENT_DIR: '$CI_DEPLOYMENT_DIR'
+    volumes:
+      - ./deploy-client.sh:/mnt/deploy-client.sh
+      - ./nuget.config:/tmp/nuget.config
+      - ./.npmrc:/tmp/.npmrc
+      - ./packages:$CI_NUGET_SOURCE_LOCAL
+      - ./deployment:$CI_DEPLOYMENT_DIR
+    command: ["/bin/sh", "/mnt/deploy-client.sh"]
+    
