@@ -28,7 +28,7 @@ The rules and regulations established in the [Code of Conduct](./CODE_OF_CONDUCT
 
 ### Legal Safe Harbor
 
-Abraxas values a constructive and fair collaboration with the participants of the Program. Abraxas will not take legal actions against participants in this Bug Bounty Program, as long as participants act in good faith and in accordance with the licence agreement, this Bug Bounty Policy, the provisions of the [Code of Conduct](./CODE_OF_CONDUCT.md) and the applicable laws. Under these conditions:
+Abraxas values a constructive and fair collaboration with the participants of the Program. Abraxas will not take legal actions against participants in this Bug Bounty Program, as long as participants act in good faith and in accordance with the [licence agreement](./CODE_OF_CONDUCT.md#license-source-code-permitted-use), this Bug Bounty Policy, the provisions of the [Code of Conduct](./CODE_OF_CONDUCT.md) and the applicable laws. Under these conditions:
 
 We interpret activities by participants within this Program as authorized access under the Swiss Penal Code. This includes Swiss Penal Code paragraphs 143, 143bis and 144bis.
 We will not file a complaint against participants within this Program for trying to circumvent the security measures deployed in order to protect the services in-scope for this Program.
@@ -48,28 +48,17 @@ All activities leading to the discovery of an improvement:
 
 - This is a public Program – everyone can participate
 - You must not be a former or current employee of Abraxas, Canton of St. Gallen, Bug Bounty Switzerland or one of its contractors
-- Any issues must be reported exclusively through the defined channel which is the platform of Bug Bounty Switzerland
+- Any issues must be reported exclusively through the channel specified in the [Submission Guidelines (CoC)](./CODE_OF_CONDUCT.md#submission-guidelines)
 
 #### Responsible Vulnerability Disclosure
 
-Vulnerability disclosure is possible since the start of the public phase of the Program, respecting the “Responsible Vulnerability Disclosure” section in the [Code of Conduct](./CODE_OF_CONDUCT.md). Abraxas will also communicate transparently about results and will credit researchers publicly, if agreed.
+Vulnerability disclosure is possible from the start of the public phase of the Program, respecting the “Responsible Vulnerability Disclosure” section in the [Code of Conduct](./CODE_OF_CONDUCT.md). Abraxas will also communicate transparently about results and will credit researchers publicly, if agreed.
 
 #### Reporting Requirements
 
-Please ensure to report only vulnerabilities with a real impact on the product `VOTING Stimmunterlagen Offline` and report clear proof of concepts that demonstrate the scenario (nothing without impact and nothing purely theoretical).
-Please make sure to complete your report with the following details:
+Please ensure to report only findings with a real impact on security of the product `VOTING Stimmunterlagen Offline` and report clear proof of concepts that demonstrate the scenario.
 
-- Attack Scenario including impact on the product `VOTING Stimmunterlagen Offline` in form of a step-by-step procedure to reproduce the issue, include attachments such as screenshots or proof of concept code as necessary
-- References to the documentation and the source code if applicable:
-  - implicated protocols/algorithms
-  - implicated pages/paragraphs
-  - implicated line(s) of code (when relevant)
-  - any other information that might help us identify the vulnerable parts
-- External references:
-  - Academic references on the matter
-  - Technical studies on the matter
-  - Conference papers
-  - Any other information that might help us understand the vulnerability
+Please make sure to complete your report in accordance with the guidelines set forth in the [Submission Guidelines (CoC)](./CODE_OF_CONDUCT.md#submission-guidelines).
 
 ### Scope
 
@@ -108,9 +97,11 @@ Additionally, there are specific scenarios for which Abraxas is prepared to offe
 
 |No.|Scenario|Examples|Bounty Range|
 |---|---|---|---|
-|1|Manipulated voting cards can be generated which make it impossible to submit a vote or permit to falsify the vote.<br /><br />Note: Manipulation of data within the source systems is excluded and cannot be claimed here. The manipulations must happen after exportation and verification from the source systems.| - Voting cards will be declared "invalid" during the electronic vote due to incorrect codes.<br />- Votes will be declared "invalid" during the vote, despite they are valid.<br />- E-voting codes (e.g. Initialisation Code) are invalid and cannot be used in the e-voting system.<br />- Individual voting cards are removed from the total set.<br />- Drop of codes for voting options.<br />- Drop of question text.<br />- Swapping the names of candidates.<br />| CHF 5'000 - CHF 15'000|
+|1|Manipulated voting cards can be generated which make it impossible to submit a vote or permit to falsify the vote.<br /><br />Note: Manipulation of data within the source systems is excluded and cannot be claimed here. The manipulations must happen after exportation and verification from the source systems.| - Voting cards will be declared "invalid" during the electronic vote due to incorrect codes.<br />- Votes will be declared "invalid" during the vote, despite they are valid.<br />- E-voting[^1] codes (e.g. Initialisation Code) are invalid and cannot be used in the e-voting system.<br />- Individual voting cards are removed from the total set.<br />- Drop of codes for voting options.<br />- Drop of question text.<br />- Swapping the names of candidates.<br />| CHF 5'000 - CHF 15'000|
 
 Rewards are distributed at the discretion of Abraxas.
+
+[^1] : The e-voting data to be printed comes from the corresponding e-voting system. Swiss Post also operates a separate [Bug Bounty Program](https://evoting-community.post.ch/en/contributions) for its e-voting system. If you are interested, you can also join this separate BB-Program, which is not operated under the responsibility of Abraxas.
 
 #### Eligibility Bounties
 

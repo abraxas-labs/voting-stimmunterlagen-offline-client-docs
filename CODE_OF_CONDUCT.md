@@ -20,9 +20,9 @@ Scope of the Program is the disclosed material and the dedicated system for the 
 
 Abraxas retains all intellectual property and relates rights to the source code and other disclosed components of the system, including copyright and patent rights. No transfer of title is intended.
 
-Everyone accessing all or part of the Program or participating in the public security test or the Bug Bounty Program agrees to be bound by the provisions of this Code of Conduct and the [Bug Bounty and Code Disclosure Policy](./SECURITY.md#Bug-Bounty-and-Code-Disclosure-Policy).
+Everyone accessing all or parts of the Program or participating in the public security test or the Bug Bounty Program agrees to be bound by the provisions of this Code of Conduct and the [Bug Bounty and Code Disclosure Policy](./SECURITY.md#Bug-Bounty-and-Code-Disclosure-Policy).
 
-Abraxas runs the Bug Bounty Program with support from Bug Bounty Switzerland GmbH. The decisions in the Bug Bounty Program are made by Abraxas solely.
+Abraxas runs the Bug Bounty Program with support from Bug Bounty Switzerland AG. The decisions in the Bug Bounty Program are made by Abraxas solely.
 
 ## What you can expect from us
 
@@ -41,10 +41,10 @@ Abraxas runs the Bug Bounty Program with support from Bug Bounty Switzerland Gmb
 
 No registration is required for accessing the system and its source code, once disclosed publicly. However, you need to register if you want to participate in the Bug Bounty Program to:
 
-- get accounts on the system
+- get accounts for the system
 - be eligible to get rewards for valid vulnerabilities
 
-You may register for the Bug Bounty Program on the [Bug Bounty Switzerland Plattform](https://www.bugbounty.ch/abraxas).
+You may register for the Bug Bounty Program on the [Bug Bounty Switzerland Platform](https://www.bugbounty.ch/abraxas).
 
 ## Scope
 
@@ -54,8 +54,8 @@ The content of the scope is defined in the [Bug Bounty and Code Disclosure Polic
 
 Findings need to be reported through one of the following channels:
 
-- Bug Bounty Program on the [Bug Bounty Switzerland Plattform](https://app.bugbounty.ch/hacker/engagement/details/f7d48517-4ec6-4d91-bc94-5337c30cf5bc/basic-data)
-- issue / security advisory to the Abraxas Product Security Incident Response Team: psirt-voting@abraxas.ch
+- Bug Bounty Program on the [Bug Bounty Switzerland Platform](https://app.bugbounty.ch/hacker/engagement/details/f7d48517-4ec6-4d91-bc94-5337c30cf5bc/basic-data)
+- Issue / security advisory to the Abraxas Product Security Incident Response Team: psirt-voting@abraxas.ch
 
     Please ensure to report only findings having an impact on security of the product `VOTING Stimmunterlagen Offline` (see chapter "Scope"). Your report must contain a clear proof of concept that demonstrates the scenario.
 
@@ -104,11 +104,11 @@ Abraxas will communicate transparently about results and findings as soon as the
 
 Everyone who reports a relevant finding will be credited for it in accordance with the terms of the [Bug Bounty and Code Disclosure Policy](./SECURITY.md#Bug-Bounty-and-Code-Disclosure-Policy). If you wish, you may remain anonymous. You may also use an alias.
 
-You are free to publish your findings only after allowing Abraxas a maximum of 90 days (starting from the day of your submission) to analyze your submission and the opportunity to fix the vulnerability. Coordinated disclosure with Abraxas after 90 days would be appreciated, but is not specifically required.
+You are free to publish your findings only after allowing Abraxas a maximum of 90 days (starting from the day of your submission) to analyze your submission and the opportunity to fix the vulnerability. As soon as we have deeply analyzed your report, we will get in touch with you regarding the publication. A coordination with Abraxas regarding the disclosure after the set period would be appreciated, but is not specifically required.
 
 ## License Source Code (Permitted use)
 
-You are entitled to examine and modify the source code for non-commercial or non-productive purposes. You may publish papers on your findings and use the information gained for the purpose of research, advancing knowledge, teaching or learning.
+You are entitled to examine and modify the source code for non-commercial or non-productive purposes. In consideration of the corresponding term mentioned above, you may publish papers on your findings and use the information gained for the purpose of research, advancing knowledge, teaching or learning.
 
 You are allowed to make copies of the source code. The license terms, copyright notices and attributions included in the source code or the other materials must be maintained and adhered to at all times.
 
