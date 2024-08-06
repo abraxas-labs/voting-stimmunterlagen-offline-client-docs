@@ -46,9 +46,9 @@ All activities leading to the discovery of an improvement:
 
 #### Eligibility Bug Bounty Program
 
-- This is a public Program – everyone can participate
-- You must not be a former or current employee of Abraxas, Canton of St. Gallen, Bug Bounty Switzerland or one of its contractors
-- Any issues must be reported exclusively through the channel specified in the [Submission Guidelines (CoC)](./CODE_OF_CONDUCT.md#submission-guidelines)
+- This is a public Program – everyone can participate.
+- You must not be a former or current employee of Abraxas, Canton of St. Gallen, Bug Bounty Switzerland or one of its contractors.
+- Any issues must be reported exclusively through the channel specified in the [Submission Guidelines (CoC)](./CODE_OF_CONDUCT.md#submission-guidelines).
 
 #### Responsible Vulnerability Disclosure
 
@@ -72,12 +72,14 @@ The application is used on a terminal device without access to any network syste
 
 Any attacks that are theoretical or require access to a remote application on the network are generally out of scope, also attacks that target the integrity of end users.
 
+The [XML Signature Verifier](https://gitlab.com/swisspost-evoting/verifier/verifier) tool is not in-scope. For more details, please refer to the [Swiss Post bug bounty program](https://yeswehack.com/programs/swiss-post).
+
 ### Qualifying Findings
 
 Everything with a real impact on security of `VOTING Stimmunterlagen Offline` – e.g.:
 
-- Remote code execution (RCE) or other attack types based on content that is imported into the application via an input medium
-- Source code findings with a measurable and provable impact on the system or the generated output
+- Remote code execution (RCE) or other attack types based on content that is imported into the application via an input medium.
+- Source code findings with a measurable and provable impact on the system or the generated output.
 
 ### Reward Grid
 

@@ -8,7 +8,7 @@ The Federal legislation provides a mechanism that allows voters to check that th
 
 The application published here with the name `VOTING Stimmunterlagen Offline` is responsible for generating the voting cards, which are afterwards transferred to a dedicated print center. The application is deployed on an airgap laptop by the cantons. During the process, the generated voting cards are encrypted and digital signed to ensure a secure transmission to the print center. The canton operates the application in 4-eyes principles.
 
-Abraxas publishs continuously pre-releases (release candidates) of the system containing information about the software, its source code and the corresponding documentation, and conducts a Bug Bounty Program. Those measures combined are referred to as "**The Program**" hereafter.
+Abraxas publishs continuously pre-releases (release candidates) of the system containing information about the software, its source code and the corresponding documentation, and conducts a Bug Bounty Program. Those measures combined are referred to as "**the Program**" hereafter.
 
 The goal of the Program is to find and fix security issues and to improve the quality of the system. Abraxas and their clients firmly believe that openness and public scrutiny will lead to a trustworthy system of high quality.
 
