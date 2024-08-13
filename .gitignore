@@ -1,0 +1,3 @@
+technical-documentations/trusted-build/packages*/
+technical-documentations/trusted-build/deployment*/
+*.overwrite.env*

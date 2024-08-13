@@ -20,4 +20,4 @@ cd $GIT_REPOSITORY_DIRECTORY
 git checkout $GIT_TAG
 
 dotnet restore $projectPath -s $CI_NUGET_SOURCE_PUBLIC -s $CI_NUGET_SOURCE_LOCAL
-dotnet pack $projectPath -c $CI_BUILD_CONFIGURATION --no-restore -o $CI_PACKAGE_OUT_DIR /p:Version=$CI_BUILD_VERSION
+dotnet pack $projectPath -c $CI_BUILD_CONFIGURATION --no-restore -o $CI_PACKAGE_OUT_DIR /p:Version=$CI_BUILD_VERSION /p:ContinuousIntegrationBuild=true /p:EnableSourceLink=false /p:SuppressImplicitGitSourceLink=true
