@@ -91,7 +91,7 @@ Reports without direct impact according to [Qualifying Vulnerabilities](./#quali
 
 |Scope|Low|Medium|High|Critical|
 |---|---|---|---|---|
-|VOTING Stimmunterlagen Offline|CHF 300|CHF 750|CHF 1'500|CHF 5'000|
+|VOTING Stimmunterlagen Offline|CHF 500|CHF 1500|CHF 4'000|CHF 10'000|
 
 #### Scenarios
 
@@ -99,7 +99,7 @@ Additionally, there are specific scenarios for which Abraxas is prepared to offe
 
 |No.|Scenario|Examples|Bounty Range|
 |---|---|---|---|
-|1|Manipulated voting cards can be generated which make it impossible to submit a vote or permit to falsify the vote.<br /><br />Note: Manipulation of data within the source systems is excluded and cannot be claimed here. The manipulations must happen after exportation and verification from the source systems.| - Voting cards will be declared "invalid" during the electronic vote due to incorrect codes.<br />- Votes will be declared "invalid" during the vote, despite they are valid.<br />- E-voting[^1] codes (e.g. Initialisation Code) are invalid and cannot be used in the e-voting system.<br />- Individual voting cards are removed from the total set.<br />- Drop of codes for voting options.<br />- Drop of question text.<br />- Swapping the names of candidates.<br />| CHF 5'000 - CHF 15'000|
+|1|Manipulated voting cards can be generated which make it impossible to submit a vote or permit to falsify the vote.<br /><br />Note: Manipulation of data within the source systems is excluded and cannot be claimed here. The manipulations must happen after exportation and verification from the source systems.| - Voting cards will be declared "invalid" during the electronic vote due to incorrect codes.<br />- Votes will be declared "invalid" during the vote, despite they are valid.<br />- E-voting[^1] codes (e.g. Initialisation Code) are invalid and cannot be used in the e-voting system.<br />- Individual voting cards are removed from the total set.<br />- Drop of codes for voting options.<br />- Drop of question text.<br />- Swapping the names of candidates.<br />| CHF 10'000 - CHF 30'000|
 
 Rewards are distributed at the discretion of Abraxas.
 
