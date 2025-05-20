@@ -30,7 +30,7 @@ In this subfolder you can find all the [technical documentations](./technical-do
 
 |Title|Short Description|Link|
 |---|---|---|
-|User Manual| User manual for the end-user. | [Link](./technical-documentations/VOTING_Stimmunterlagen_Offline_User_Manual_V0.92_Entwurf.pdf)
+|User Manual| User manual for the end-user. | [Link](./technical-documentations/VOTING_Stimmunterlagen_Offline_User_Manual.pdf)
 |Building Block View| System view of the VOTING Stimmunterlagen Offline. | [Link](./technical-documentations/VOTING_Stimmunterlagen_Offline_Building_Block_View.pdf)
 |Runtime View| User and process level process definitions for the generation of E-Voting voting cards. | [Link](./technical-documentations/VOTING_Stimmunterlagen_Offline_Runtime_View.pdf)
 |Cryptography| Security concept for securing E-Voting voting cards including cryptographic specifications. | [Link](./technical-documentations/VOTING_Stimmunterlagen_Offline_Cryptography.pdf)
