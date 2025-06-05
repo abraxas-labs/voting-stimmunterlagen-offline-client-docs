@@ -1,5 +1,5 @@
-# node:18.20.3-bullseye
-FROM node@sha256:0ffac09d97187af457b5f7f11666796ecdc1360fe3600ef63bb2fa1009b4ab50
+# node:20.18.3-bullseye
+FROM node@sha256:ecb3c7399d478daf8fb7dac6d27ba1f73c880c256ff2c1ef5f5db92059ce12d3
 
 ENV \
     # Enable detection of running in a container
@@ -46,8 +46,8 @@ RUN dpkg --add-architecture i386 && \
 
 # install semantic release
 RUN npm i -g \
-    semantic-release@19.0.2 \
-    @semantic-release/gitlab@6.2.2 \
-    @semantic-release/exec@5.0.0
+    semantic-release@24.2.0 \
+    @semantic-release/gitlab@13.2.1 \
+    @semantic-release/exec@6.0.3
 
 ENTRYPOINT []
