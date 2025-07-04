@@ -16,6 +16,10 @@ The [Bug Bounty Policy](./SECURITY.md) (also called Security Policy) complements
 
 See the [licence-file](./LICENCE) for how the software ist provided by the copyright holders and contributors.
 
+### Exclusion List
+
+The [exclusion list](./Exclusions.pdf) publishes all security relevant topics we already know and which are still in the product backlog of our product.
+
 ### Quality Reports
 
 See under [quality reports](./technical-documentations/quality-reports).
