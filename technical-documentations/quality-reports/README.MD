@@ -8,12 +8,12 @@ The quality profiles used for this are stored in the [sonar-quality-profiles](./
 
 ### Used Quality Profiles
 
-- [C# - Abraxas Way v1.3](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.3.xml)
+- [C# - Abraxas Way v1.4](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.4.xml)
 - [XML - Abraxas Way v1.2](./sonar-quality-profiles/XML%20Quality%20Profile%20-%20Abraxas%20v1.2.xml)
 
 ### Version
 
-v1.25.0
+v1.26.1
 
 ### Quality Report
 
@@ -24,13 +24,13 @@ v1.25.0
 ### Used Quality Profiles
 
 - [CSS - Abraxas Way v1.1](./sonar-quality-profiles/CSS%20Quality%20Profile%20-%20Abraxas%20v1.1.xml)
-- [HTML - Abraxas Way v1.1](./sonar-quality-profiles/HTML%20Quality%20Profile%20-%20Abraxas%20v1.1.xml)
-- [JavaScript - Abraxas Way v1.4](./sonar-quality-profiles/JavaScript%20Quality%20Profile%20-%20Abraxas%20v1.4.xml)
-- [TypeScript - Abraxas Way v1.5](./sonar-quality-profiles/TypeScript%20Quality%20Profile%20-%20Abraxas%20v1.5.xml)
+- [HTML - Abraxas Way v1.2](./sonar-quality-profiles/HTML%20Quality%20Profile%20-%20Abraxas%20v1.2.xml)
+- [JavaScript - Abraxas Way v1.5](./sonar-quality-profiles/JavaScript%20Quality%20Profile%20-%20Abraxas%20v1.5.xml)
+- [TypeScript - Abraxas Way v1.6](./sonar-quality-profiles/TypeScript%20Quality%20Profile%20-%20Abraxas%20v1.6.xml)
 
 ### Version
 
-v1.25.0
+v1.26.1
 
 ### Quality Report
 
@@ -40,12 +40,11 @@ v1.25.0
 
 ### Used Quality Profiles
 
-- [C# - Abraxas Way v1.3](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.3.xml)
-- [XML - Abraxas Way v1.2](./sonar-quality-profiles/XML%20Quality%20Profile%20-%20Abraxas%20v1.2.xml)
+- [C# - Abraxas Way v1.4](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.4.xml)
 
 ### Version
 
-v2.2.4
+v2.3.0
 
 ### Quality Report
 

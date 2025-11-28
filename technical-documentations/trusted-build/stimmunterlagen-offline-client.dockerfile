@@ -1,5 +1,5 @@
-# node:20.18.3-bullseye
-FROM node@sha256:ecb3c7399d478daf8fb7dac6d27ba1f73c880c256ff2c1ef5f5db92059ce12d3
+# node:22.20.0-bullseye
+FROM node@sha256:051bc0ea56b3b7340f7b55a7c6b16dfc243c5a6d4d8d55c1bc750d01dd4ff6dc
 
 ENV \
     # Enable detection of running in a container
@@ -13,10 +13,10 @@ ENV \
     # skip first time
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
 
-ARG DOTNET_VERSION=8.0.201
+ARG DOTNET_VERSION=8.0.415
 ARG BIN=/usr/bin
 ARG DOTNET_BIN=/usr/share/dotnet
-ARG WINE_VERSION=8.0.0.0~bullseye-1
+ARG WINE_VERSION=8.0.2~bullseye-1
 
 # install utils
 RUN apt-get update && \
@@ -46,8 +46,8 @@ RUN dpkg --add-architecture i386 && \
 
 # install semantic release
 RUN npm i -g \
-    semantic-release@24.2.0 \
-    @semantic-release/gitlab@13.2.1 \
-    @semantic-release/exec@6.0.3
+    semantic-release@25.0.1 \
+    @semantic-release/gitlab@13.2.9 \
+    @semantic-release/exec@7.1.0
 
 ENTRYPOINT []
