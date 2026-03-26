@@ -4,48 +4,23 @@ The product [SonarQube](https://www.sonarqube.org/) is used for static code anal
 
 The quality profiles used for this are stored in the [sonar-quality-profiles](./sonar-quality-profiles/) directory.
 
-## VOTING Stimmunterlagen Offline Client (Backend)
+## Metrics Overview
 
-### Used Quality Profiles
-
-- [C# - Abraxas Way v1.4](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.4.xml)
-- [XML - Abraxas Way v1.2](./sonar-quality-profiles/XML%20Quality%20Profile%20-%20Abraxas%20v1.2.xml)
-
-### Version
-
-v1.26.1
-
-### Quality Report
-
-![SonarQube Report - VOTING Stimmunterlagen Offline Client Backend](SonarQube%20Report%20-%20VOTING%20Stimmunterlagen%20Offline%20Client%20Backend.png)
-
-## VOTING Stimmunterlagen Offline Client (Frontend)
-
-### Used Quality Profiles
-
-- [CSS - Abraxas Way v1.1](./sonar-quality-profiles/CSS%20Quality%20Profile%20-%20Abraxas%20v1.1.xml)
-- [HTML - Abraxas Way v1.2](./sonar-quality-profiles/HTML%20Quality%20Profile%20-%20Abraxas%20v1.2.xml)
-- [JavaScript - Abraxas Way v1.5](./sonar-quality-profiles/JavaScript%20Quality%20Profile%20-%20Abraxas%20v1.5.xml)
-- [TypeScript - Abraxas Way v1.6](./sonar-quality-profiles/TypeScript%20Quality%20Profile%20-%20Abraxas%20v1.6.xml)
-
-### Version
-
-v1.26.1
-
-### Quality Report
-
-![SonarQube Report - VOTING Stimmunterlagen Offline Client Frontend](SonarQube%20Report%20-%20VOTING%20Stimmunterlagen%20Offline%20Client%20Frontend.png)
-
-## VOTING Stimmunterlagen Offline Client (Shared)
-
-### Used Quality Profiles
-
-- [C# - Abraxas Way v1.4](./sonar-quality-profiles/CSharp%20Quality%20Profile%20-%20Abraxas%20v1.4.xml)
-
-### Version
-
-v2.3.0
-
-### Quality Report
-
-![SonarQube Report - VOTING Stimmunterlagen Offline Client Shared](SonarQube%20Report%20-%20VOTING%20Stimmunterlagen%20Offline%20Client%20Shared.png)
+| Metric | Backend | Frontend | Library (Shared) |
+|---|---|---|---|
+| **Type** | Backend | Frontend | Library |
+| **Version** | `v1.26.1` | `v1.26.1` | `v2.3.0` |
+| **Used Quality Profiles** | Abraxas v1.4 way (cs)<br>Abraxas v1.1 way (css)<br>Abraxas v1.5 way (js)<br>Abraxas v1.6 way (ts)<br>Abraxas v1.2 way (web)<br>Abraxas v1.2 way (xml)<br>Abraxas v1.0 way (yaml) | Abraxas v1.1 way (css)<br>Abraxas v1.5 way (js)<br>Abraxas v1.6 way (ts)<br>Abraxas v1.2 way (web) | Abraxas v1.4 way (cs)<br>Abraxas v1.5 way (js)<br>Abraxas v1.0 way (yaml) |
+| **Quality Gate** | `OK` | `OK` | `OK` |
+| **Vulnerabilities** | 0 | 0 | 0 |
+| **Bugs** | 0 | 0 | 0 |
+| **Code Smells** | 162 | 45 | 16 |
+| **Accepted Issues** | 17 | 0 | 0 |
+| **Security Hotspots** | 0 | 0 | 0 |
+| **Coverage** | 0.0% | 0.0% | 87.1% |
+| **Duplicated Lines** | 322 | 0 | 0 |
+| **Lines to Cover** | 3065 | 985 | 635 |
+| **Lines of Code (ncloc)** | 14449 | 5412 | 1114 |
+| **Maintainability Rating** | A | A | A |
+| **Reliability Rating** | A | A | A |
+| **Security Rating** | A | A | A |
