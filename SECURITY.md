@@ -74,6 +74,8 @@ Any attacks that are theoretical or require access to a remote application on th
 
 The [XML Signature Verifier](https://gitlab.com/swisspost-evoting/verifier/verifier) tool is not in-scope. For more details, please refer to the [Swiss Post bug bounty program](https://yeswehack.com/programs/swiss-post).
 
+The Post XML signature validation is intentionally non-blocking by design. A failed check only shows a warning. Continuing the process of generating voting cards is a decision left to the operators under the 4-eyes principle.
+
 ### Qualifying Findings
 
 Everything with a real impact on security of `VOTING Stimmunterlagen Offline` – e.g.:
